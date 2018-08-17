@@ -306,6 +306,7 @@ const postEnableProcess = (plugin) => {
         webPreferences: {
           preload: join(ROOT, 'assets', 'js', 'plugin-preload.js'),
           plugins: true,
+          experimentalFeatures: true,
           nodeIntegrationInWorker: true,
           affinity: 'poi-plugin',
         },
